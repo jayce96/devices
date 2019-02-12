@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device>
+  <developer>HBRS</developer>
+
+  <product>BME680</product>
+
+  <pwrdownmode>true</pwrdownmode>
+
+  <regular>
+    <reg id="11" name="Voltage supply">
+      <endpoint dir="inp" name="Voltage" type="num">
+        <size>2</size>
+        <units>
+          <unit factor="0.001" name="V" offset="0"/>
+          <unit factor="1" name="mV" offset="0"/>
+        </units>
+      </endpoint>
+    </reg>
+
+    <reg id="12" name="Sensor">
+      <endpoint dir="inp" name="Temperature" type="num">
+        <position>0</position>
+        <size>2</size>
+        <units>
+          <unit factor="0.1" name="°C" offset="0"/>
+        </units>
+      </endpoint>
+      <endpoint dir="inp" name="Pressure" type="num">
+          <position>2</position>
+          <size>2</size>
+          <units>
+              <unit factor="0.1" name="hPa" offset="0"/>
+          </units>
+      </endpoint>
+      <endpoint dir="inp" name="Humidity" type="num">
+          <position>4</position>
+          <size>2</size>
+          <units>
+              <unit factor="0.1" name="%" offset="0"/>
+          </units>
+      </endpoint>
+      <endpoint dir="inp" name="Gas" type="num">
+          <position>6</position>
+          <size>2</size>
+          <units>
+              <unit factor="0.1" name="kOhm" offset="0"/>
+          </units>
+      </endpoint>
+    </reg>
+  </regular>
+</device>

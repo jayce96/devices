@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device>
+  <developer>HBRS</developer>
+
+  <product>Universal-Platine</product>
+
+  <pwrdownmode>true</pwrdownmode>
+
+  <regular>
+    <reg id="11" name="Voltage supply">
+      <endpoint dir="inp" name="Voltage" type="num">
+        <size>2</size>
+
+        <units>
+          <unit factor="0.001" name="V" offset="0"/>
+        </units>
+      </endpoint>
+    </reg>
+
+    <reg id="12" name="Sensor">
+      <endpoint dir="inp" name="Temperature" type="num">
+        <size>2</size>
+        <units>
+          <unit factor="0.001" name="C" offset="0"/>
+        </units>
+      </endpoint>
+    </reg>
+  </regular>
+</device>
