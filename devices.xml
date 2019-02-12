@@ -65,6 +65,8 @@ sensitive and must match.
 	<developer id="81" name="HBRS">
 		<dev id="1" name="temphumpress" label="Temperature-Humidity-Pressure environmentalsensor"/>
 		<dev id="2" name="temphumpressgas" label="Temperature-Humidity-Pressure-Gas"/>
+		<dev id="3" name="temperature" label="MCP9701A"/>
+		<dev id="4" name="temphumpressgas" label="BME680"/>
 	</developer>
   <developer id="82" name="keytree">
     <dev id="1" name="head-sensor" label="Head-sensor board"/>
